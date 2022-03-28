@@ -1,0 +1,124 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  font-family: 'Gaegu';
+  outline: none;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+.container{
+  height: 650px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #5A687B;
+}
+.calculator-grid {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  grid-template-columns: repeat(4, 68px);
+  background-color: #283345;
+  border: none;
+  background-color: #283345;
+  padding: 15px;
+  border-radius: 30px;
+  box-shadow: inset 5px 5px 12px #77859c,
+                  5px 5px 12px #1C263A;
+  display: grid;
+}
+
+button {
+  cursor: pointer;
+  height: 48px;
+  width: 48px;
+  background-color: #313e52;
+  box-shadow: inset -5px -5px 12px #576780,
+              inset 5px 5px 12px #1C263A;
+  border: none;
+  border-radius: 50%;
+  margin: 10px;
+  text-align: center;
+}
+
+.output {
+  grid-column: 1 / -1;
+  background-color: rgba(0, 0, 0, .75);
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  flex-direction: column;
+  word-wrap: break-word;
+  word-break: break-all;
+  height: 70px;
+  width: 260px;
+  background-color: #313e52;
+  box-shadow: inset -5px -5px 12px #576780,
+              inset 5px 5px 12px #1C263A;
+  border: none;
+  border-radius: 30px;
+  color: white;
+  text-align: end;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  padding: 50px;
+}
+
+.output .previous-operand {
+  color: rgba(255, 255, 255, .75);
+  font-size: 1.5rem;
+}
+
+.output .current-operand {
+  color: white;
+  font-size: 2.5rem;
+}
+
+.clear{
+  color: #ff6774;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.clear:hover{
+  background-color: #475468;
+}
+
+.operator{
+  color: #ec9e37;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.operator:hover{
+  background-color: #475468;
+}
+
+.number{
+  color: white;
+  font-size: 25px;
+}
+
+.number:hover{
+  background-color: #475468;
+}
+
+.calculateresult{
+  height: 48px;
+  width: 110px;
+  border-radius: 10%;
+  background-color: #ec9e37;
+  box-shadow: inset -5px -5px 12px #dfa355,
+              inset 5px 5px 12px #c57712;
+  font-weight: bold;
+  font-size: 30px;
+  color: white;
+  margin-bottom: 30px;
+}
+
+.calculateresult:hover{
+  background-color: #dfa355;
+}
